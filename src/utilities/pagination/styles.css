@@ -1,0 +1,54 @@
+.listOfPages {
+  background-color: #4caf50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100%;
+  z-index: 1000;
+  overflow: scroll;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+}
+
+.pageno {
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pageno.active {
+  background-color: #fff;
+  color: #4caf50;
+  font-weight: 700;
+}
+
+.pageno:hover:not(.active) {
+  background-color: #45a049;
+  color: #fff;
+}
+
+.pageno-prev,
+.pageno-next {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.pageno-prev {
+  padding-left: 20px;
+}
+
+.pageno-next {
+  padding-right: 20px;
+}
